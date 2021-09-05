@@ -10,7 +10,7 @@ namespace Library
             StringBuilder stringBuilder = new StringBuilder("Scheduling appointment...\n");
             Boolean isValid = true;
 
-            if (string.IsNullOrEmpty(name))
+            if (string.IsNullOrEmpty(name)) 
             {
                 stringBuilder.Append("Unable to schedule appointment, Name is required\n");
                 isValid = false;
@@ -51,3 +51,6 @@ namespace Library
 
     }
 }
+/* Esta clase tiene un exceso de responsabilidades, por lo tanto no cumple con el SRP,
+ esto es debido a que una única clase, estaría abarcando demasiada cosa,
+  y no varias clases concretas con sus respectivas funciones*/
